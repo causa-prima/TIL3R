@@ -89,16 +89,35 @@ var resizeAndMove = function(choice){
   print("TIL3R called with wide: " + wide + ", choice " + choice);
   var workGeo = workspace.clientArea(KWin.ScreenArea, activeClient.screen, 1);
   var geo = activeClient.geometry;
-  geo.x = workGeo.x + (choice - 1) % 3 * workGeo.width / 3;      
-  geo.width = wide * workGeo.width / 3;
-  geo.y = workGeo.y;
-  if (choice>6) {
-    geo.y = workGeo.y + workGeo.height / 2;
+  
+  if (workGeo.width > workGeo.height) // landscape mode
+  {
+    geo.x = workGeo.x + (choice - 1) % 3 * workGeo.width / 3;      
+    geo.width = wide * workGeo.width / 3;
+    geo.y = workGeo.y;
+    if (choice>6) {
+      geo.y = workGeo.y + workGeo.height / 2;
+    }
+    geo.height = workGeo.height;
+    if (choice>3) {
+      geo.height = workGeo.height/2;
+    }
   }
-  geo.height = workGeo.height;
-  if (choice>3) {
-    geo.height = workGeo.height/2;
+  else
+  {
+    geo.y = workGeo.y + (choice - 1) % 3 * workGeo.height / 3;      
+    geo.height = wide * workGeo.height / 3;
+    geo.x = workGeo.x;
+    if (choice>6) {
+      geo.x = workGeo.x + workGeo.width / 2;
+    }
+    geo.width = workGeo.width;
+    if (choice>3) {
+      geo.width = workGeo.width/2;
+    }
   }
+  
+  
   print("new geometry, x: " + geo.x + " y: " + geo.y + " width: " + geo.width + " height: " + geo.height);
   activeClient.geometry = geo;
 }
