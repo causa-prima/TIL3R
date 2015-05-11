@@ -87,7 +87,7 @@ var resizeAndMove = function(choice){
   wide = Math.floor(choice / 10);
   choice = choice % 10;
   print("TIL3R called with wide: " + wide + ", choice " + choice);
-  var workGeo = workspace.clientArea(KWin.ScreenArea, activeClient.screen, 1);
+  var workGeo = workspace.clientArea(KWin.PlacementArea, activeClient.screen, 1);
   var geo = activeClient.geometry;
   
   if (workGeo.width > workGeo.height) // landscape mode
