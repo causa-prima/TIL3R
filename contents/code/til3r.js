@@ -134,9 +134,9 @@ registerShortcut("TIL3R: left third, lower half", "TIL3R: left third, lower half
 registerShortcut("TIL3R: middle third, lower half", "TIL3R: middle third, lower half", "Meta+Alt+8", function () {resizeAndMove(18)});
 registerShortcut("TIL3R: right third, lower half", "TIL3R: right third, lower half", "Meta+Alt+9", function () {resizeAndMove(19)});
 
-registerShortcut("TIL3R: left two thirds, full height", "TIL3R: left third, full height", "Meta+Ctrl+1", function () {resizeAndMove(21)});
-registerShortcut("TIL3R: right two thirds, full height", "TIL3R: middle third, full height", "Meta+Ctrl+2", function () {resizeAndMove(22)});
-registerShortcut("TIL3R: left two thirds, upper half", "TIL3R: left third, upper half", "Meta+Ctrl+4", function () {resizeAndMove(24)});
-registerShortcut("TIL3R: right two thirds, upper half", "TIL3R: middle third, upper half", "Meta+Ctrl+5", function () {resizeAndMove(25)});
-registerShortcut("TIL3R: left two thirds, lower half", "TIL3R: left third, lower half", "Meta+Ctrl+7", function () {resizeAndMove(27)});
-registerShortcut("TIL3R: right two thirds, lower half", "TIL3R: middle third, lower half", "Meta+Ctrl+8", function () {resizeAndMove(28)});
+registerShortcut("TIL3R: left two thirds, full height", "TIL3R: left two thirds, full height", "Meta+Ctrl+1", function () {resizeAndMove(21)});
+registerShortcut("TIL3R: right two thirds, full height", "TIL3R: right two thirds, full height", "Meta+Ctrl+2", function () {resizeAndMove(22)});
+registerShortcut("TIL3R: left two thirds, upper half", "TIL3R: left two thirds, upper half", "Meta+Ctrl+4", function () {resizeAndMove(24)});
+registerShortcut("TIL3R: right two thirds, upper half", "TIL3R: right two thirds, upper half", "Meta+Ctrl+5", function () {resizeAndMove(25)});
+registerShortcut("TIL3R: left two thirds, lower half", "TIL3R: left two thirds, lower half", "Meta+Ctrl+7", function () {resizeAndMove(27)});
+registerShortcut("TIL3R: right two thirds, lower half", "TIL3R: right two thirds, lower half", "Meta+Ctrl+8", function () {resizeAndMove(28)});
